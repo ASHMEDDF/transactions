@@ -38,7 +38,7 @@ public class ClientController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Client> getClientById(@PathVariable Long id) {
-        Optional<Client> clientOptional = clientService.findById(id);
+        Optional<Client> clientOptional = clientService.findByClientId(id);
 
         return clientOptional.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
@@ -56,7 +56,7 @@ public class ClientController {
 
         client.setClientId(clientDetails.getClientId());
         client.setPassword(clientDetails.getPassword());
-        client.setEstado(clientDetails.getEstado());
+        client.setState(clientDetails.getState());
         client.setName(clientDetails.getName());
         client.setGender(clientDetails.getGender());
         client.setAge(clientDetails.getAge());
@@ -77,7 +77,7 @@ public class ClientController {
             switch (key) {
                 case "clientId" -> client.setClientId(((Number) value).longValue());
                 case "password" -> client.setPassword((String) value);
-                case "estado" -> client.setEstado((Boolean) value);
+                case "estado" -> client.setState((Boolean) value);
                 case "name" -> client.setName((String) value);
                 case "gender" -> client.setGender((String) value);
                 case "age" -> client.setAge((Integer) value);

@@ -44,7 +44,7 @@ class ClientControllerIntegrationTests {
         client.setClientId(1L);
         client.setName("John Doe");
         client.setPassword("password");
-        client.setEstado(true);
+        client.setState(true);
         client.setGender("Male");
         client.setAge(30);
         client.setIdentification("123456789");
@@ -62,7 +62,7 @@ class ClientControllerIntegrationTests {
 
     @Test
     void testGetClientById() throws Exception {
-        Long savedClientId = client.getId();
+        Long savedClientId = client.getClientId();
 
         mockMvc.perform(get("/clientes/" + savedClientId))
                 .andExpect(status().isOk())

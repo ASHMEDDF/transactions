@@ -14,7 +14,7 @@ class ClientTests {
         client.setClientId(1L);
         client.setName("John Doe");
         client.setPassword("password");
-        client.setEstado(true);
+        client.setState(true);
         client.setGender("Male");
         client.setAge(30);
         client.setIdentification("123456789");
@@ -23,7 +23,7 @@ class ClientTests {
 
         assertEquals(1L, client.getClientId());
         assertEquals("John Doe", client.getName());
-        assertTrue(client.getEstado());
+        assertTrue(client.getState());
         assertEquals("Male", client.getGender());
         assertEquals(30, client.getAge());
         assertEquals("123456789", client.getIdentification());
