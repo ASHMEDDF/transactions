@@ -12,9 +12,9 @@ services:
     environment:
       - SPRING_DATASOURCE_PASSWORD=password
 
-  accounts-service:
+  transactions-service:
     build:
-      context: ./accounts
+      context: ./transactions
     image: devsu-accounts:latest
     ports:
       - "8081:8081"
