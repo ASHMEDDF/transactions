@@ -1,8 +1,8 @@
 package com.transactions.devsu.integration;
 
-import com.transactions.devsu.dto.ClientDTO;
-import com.transactions.devsu.entities.Account;
-import com.transactions.devsu.entities.Movement;
+import com.transactions.devsu.model.dto.ClientDTO;
+import com.transactions.devsu.model.entities.Account;
+import com.transactions.devsu.model.entities.Movement;
 import com.transactions.devsu.exceptions.BadRequestException;
 import com.transactions.devsu.exceptions.InsufficientBalanceException;
 import com.transactions.devsu.exceptions.ResourceNotFoundException;

@@ -1,6 +1,6 @@
 package com.transactions.devsu.controller;
 
-import com.transactions.devsu.entities.Movement;
+import com.transactions.devsu.model.entities.Movement;
 import com.transactions.devsu.exceptions.ResourceNotFoundException;
 import com.transactions.devsu.services.MovementService;
 import org.springframework.beans.factory.annotation.Autowired;

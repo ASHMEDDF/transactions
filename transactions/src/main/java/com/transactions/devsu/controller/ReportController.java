@@ -1,6 +1,6 @@
 package com.transactions.devsu.controller;
 
-import com.transactions.devsu.dto.ReportDTO;
+import com.transactions.devsu.model.dto.ReportDTO;
 import com.transactions.devsu.services.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;

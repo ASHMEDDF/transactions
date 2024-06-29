@@ -1,4 +1,4 @@
-package com.transactions.devsu.dto;
+package com.transactions.devsu.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

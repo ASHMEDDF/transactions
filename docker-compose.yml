@@ -1,0 +1,31 @@
+version: '3.0'
+
+services:
+  clients-service:
+    build:
+      context: ./clients
+    image: devsu-clients:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - devsu-network
+    environment:
+      - SPRING_DATASOURCE_PASSWORD=password
+
+  accounts-service:
+    build:
+      context: ./accounts
+    image: devsu-accounts:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_PASSWORD=password
+      - CUSTOMER_SERVICE_URL=http://clients-service:8080/clientes
+    depends_on:
+      - clients-service
+    networks:
+      - devsu-network
+
+networks:
+  devsu-network:
+    driver: bridge

@@ -1,6 +1,6 @@
 package com.transactions.devsu.repository;
 
-import com.transactions.devsu.entities.Account;
+import com.transactions.devsu.model.entities.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

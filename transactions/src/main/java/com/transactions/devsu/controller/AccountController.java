@@ -1,7 +1,7 @@
 package com.transactions.devsu.controller;
 
-import com.transactions.devsu.dto.ClientDTO;
-import com.transactions.devsu.entities.Account;
+import com.transactions.devsu.model.dto.ClientDTO;
+import com.transactions.devsu.model.entities.Account;
 import com.transactions.devsu.exceptions.ResourceNotFoundException;
 import com.transactions.devsu.services.AccountService;
 import com.transactions.devsu.services.CustomerClient;

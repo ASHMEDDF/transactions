@@ -1,10 +1,10 @@
 package com.transactions.devsu.services;
 
-import com.transactions.devsu.dto.AccountDTO;
-import com.transactions.devsu.dto.ClientDTO;
-import com.transactions.devsu.dto.MovementDTO;
-import com.transactions.devsu.dto.ReportDTO;
-import com.transactions.devsu.entities.Account;
+import com.transactions.devsu.model.dto.AccountDTO;
+import com.transactions.devsu.model.dto.ClientDTO;
+import com.transactions.devsu.model.dto.MovementDTO;
+import com.transactions.devsu.model.dto.ReportDTO;
+import com.transactions.devsu.model.entities.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
