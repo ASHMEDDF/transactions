@@ -77,23 +77,23 @@ class ClientControllerTests {
         client.setName("John Doe");
         client.setClientId(1L);
 
-        when(clientService.findById(anyLong())).thenReturn(Optional.of(client));
+        when(clientService.findByClientId(anyLong())).thenReturn(Optional.of(client));
 
         mockMvc.perform(get("/clientes/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name", is("John Doe")));
 
-        verify(clientService, times(1)).findById(1L);
+        verify(clientService, times(1)).findByClientId(1L);
     }
 
     @Test
     void testGetClientByIdNotFound() throws Exception {
-        when(clientService.findById(anyLong())).thenReturn(Optional.empty());
+        when(clientService.findByClientId(anyLong())).thenReturn(Optional.empty());
 
         mockMvc.perform(get("/clientes/111"))
                 .andExpect(status().isNotFound());
 
-        verify(clientService, times(1)).findById(111L);
+        verify(clientService, times(1)).findByClientId(111L);
     }
 
     @Test

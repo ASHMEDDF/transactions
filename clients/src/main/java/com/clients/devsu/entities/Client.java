@@ -27,7 +27,7 @@ public class Client extends Person{
     @Column(nullable = false)
     private String password;
 
-    private Boolean estado;
+    private Boolean state;
 
     public void setPassword(String password) {
         this.password = new BCryptPasswordEncoder().encode(password);
