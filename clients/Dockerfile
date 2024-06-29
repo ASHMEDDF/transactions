@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el archivo JAR de la aplicación al contenedor
-COPY target/devsu-clients.jar app.jar
+COPY target/devsu-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que se ejecutará la aplicación
 EXPOSE 8080
