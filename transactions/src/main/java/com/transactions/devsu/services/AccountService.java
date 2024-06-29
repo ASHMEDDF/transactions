@@ -1,6 +1,6 @@
 package com.transactions.devsu.services;
 
-import com.transactions.devsu.entities.Account;
+import com.transactions.devsu.model.entities.Account;
 import com.transactions.devsu.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
