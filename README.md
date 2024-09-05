@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Microservices Project
 
@@ -142,3 +143,6 @@ The project has the following structure:
 ## Conclusion
 
 You now have both microservices running in Docker containers, communicating with each other. Follow the steps outlined above to build, deploy, and test the services. Feel free to modify and extend the functionality as needed. If you encounter any issues, check the logs for troubleshooting or reach out for support.
+=======
+# bankApp
+>>>>>>> frontApp/master
